@@ -26,6 +26,6 @@ Docs: https://www.npmjs.com/package/json-server
 
 `npx json-server db.json`
 
-### Lauch app
+### Launch app
 
 http://localhost:4200/
