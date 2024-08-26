@@ -60,11 +60,11 @@ export class CustomerComponent implements OnInit {
     });
   }
 
-  searchTitle(): void {
+  searchCustomer(): void {
     this.currentCustomer = {};
     this.currentIndex = -1;
 
-    this.customerService.findByTitle(this.firstname).subscribe({
+    this.customerService.findByName(this.firstname).subscribe({
       next: (data) => {
         this.customers = data;
         console.log(data);

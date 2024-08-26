@@ -2,5 +2,14 @@
   "customers": [
     { "id": "1", "firstname": "Rose", "lastname": "Lee" },
     { "id": "2", "firstname": "Aley", "lastname": "ZZ" }
-  ]
+  ],
+  "login": {
+    "message": "Login successfully.",
+    "success": true,
+    "data": {
+      "userName": "admin",
+      "password": "",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+    }
+  }
 }
