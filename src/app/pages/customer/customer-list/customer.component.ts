@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Customer } from '../models/customer.model';
-import { CustomerService } from '../services/customer.service';
+import { Customer } from '../../../models/customer.model';
+import { CustomerService } from '../../../services/customer.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CustomerDetailComponent } from '../customer-detail/customer-detail.component';
@@ -60,11 +60,11 @@ export class CustomerComponent implements OnInit {
     });
   }
 
-  searchTitle(): void {
+  searchCustomer(): void {
     this.currentCustomer = {};
     this.currentIndex = -1;
 
-    this.customerService.findByTitle(this.firstname).subscribe({
+    this.customerService.findByName(this.firstname).subscribe({
       next: (data) => {
         this.customers = data;
         console.log(data);
